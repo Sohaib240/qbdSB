@@ -1,0 +1,56 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.8.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+ext {
+	mavenRepositoryBaseURL = "http://mavenrepo.hourtimesheet.com:8081/artifactory"
+	springGroup = 'org.springframework'
+	springVersion = '4.3.5.RELEASE'
+}
+
+group = 'com.hourtimesheet'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+ext {
+	mavenRepositoryBaseURL = "http://mavenrepo.hourtimesheet.com:8081/artifactory"
+	springGroup = 'org.springframework'
+	springVersion = '4.3.5.RELEASE'
+}
+
+repositories {
+	mavenCentral()
+	maven { url "${mavenRepositoryBaseURL}/libs-release" }
+	maven { url "https://maven.java.net" }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.apache.cxf:cxf-rt-frontend-jaxws:3.1.9'
+	implementation 'org.apache.cxf:cxf-rt-transports-http:3.1.9'
+	implementation'org.slf4j:slf4j-api:1.7.16'
+	implementation 'org.slf4j:slf4j-simple:1.7.16'
+	implementation'org.apache.commons:commons-lang3:3.4'
+	implementation 'org.apache.velocity:velocity:1.7'
+	implementation 'com.hourtimesheet:hourtimesheet-encryption:1.0-RELEASE'
+	implementation 'org.springframework.data:spring-data-mongodb:1.9.5.RELEASE'
+	implementation 'joda-time:joda-time:2.9.4'
+	implementation 'com.google.code.gson:gson:2.6.1'
+	implementation 'com.google.guava:guava:19.0'
+	implementation 'org.aspectj:aspectjweaver:1.8.9'
+	implementation 'com.amazonaws:aws-java-sdk:1.11.39'
+	implementation "org.springframework.security:spring-security-core:4.0.3.RELEASE"
+	compile group: 'xom', name: 'xom', version: '1.2.5'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.8.RELEASE'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '0.9.26'
+	testCompile(
+			['junit:junit:4.12'],
+			['org.mockito:mockito-all:1.10.19']
+	)
+
+}
+
+

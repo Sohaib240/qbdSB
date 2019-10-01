@@ -1,0 +1,24 @@
+package com.ourtimesheet.notification;
+
+/**
+ * Created by Abdus Salam on 9/5/2016.
+ */
+public enum NotificationType {
+    SyncNotification,
+    SignUpNotification,
+    APPROVETIMESHEET,
+    APPROVETIMESHEETWITHOUTSIGNATURE,
+    REJECTTIMESHEET,
+    SUBMITTIMESHEET,
+    UNSUBMITTIMESHEET,
+    TIMESHEETCORRECTION,
+    TIMESHEETSUBMISSIONREMINDER,
+    DAILY_TIMESHEET_REMINDER,
+    IMPORT_FAILURE,
+    IMPORT_SUCCESS,
+    TIMESHEET_CHANGE,
+    APPROVE_LEAVE,
+    REJECT_LEAVE,
+    REQUEST_LEAVE,
+    CANCEL_LEAVE;
+}

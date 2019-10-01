@@ -1,0 +1,17 @@
+<QBWCXML>
+    <AppName>$appName</AppName>
+    <AppID>$appID</AppID>
+    <AppURL>$appURL</AppURL>
+    <CertURL>$certURL</CertURL>
+    <AppDescription>$appDescription</AppDescription>
+    <AppSupport>$appSupport</AppSupport>
+    <UserName>$userName</UserName>
+    <FileID>{$fileID}</FileID>
+    <OwnerID>{$ownerID}</OwnerID>
+    <QBType>$qbType</QBType>
+    <Scheduler>
+        <RunEveryNMinutes>$schedulerRept</RunEveryNMinutes>
+    </Scheduler>
+    <PersonalDataPref>$dataPrefrence</PersonalDataPref>
+    <IsReadOnly>$readOnlyIndicator</IsReadOnly>
+</QBWCXML>

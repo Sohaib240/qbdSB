@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq onError="stopOnError">
+        <TimeTrackingAddRq>
+            <TimeTrackingAdd>
+                <TxnDate></TxnDate>
+                <EntityRef>
+                    <ListID></ListID>
+                    <FullName></FullName>
+                </EntityRef>
+                <CustomerRef>
+                    <ListID></ListID>
+                    <FullName></FullName>
+                </CustomerRef>
+                <ItemServiceRef>
+                    <ListID></ListID>
+                    <FullName></FullName>
+                </ItemServiceRef>
+                <Duration></Duration>
+                <ClassRef>
+                    <ListID></ListID>
+                    <FullName></FullName>
+                </ClassRef>
+                <PayrollItemWageRef>
+                    <ListID></ListID>
+                    <FullName></FullName>
+                </PayrollItemWageRef>
+                <Notes></Notes>
+                <BillableStatus></BillableStatus>
+            </TimeTrackingAdd>
+        </TimeTrackingAddRq>
+    </QBXMLMsgsRq>
+</QBXML>
